@@ -33,6 +33,15 @@ For example,
 
     DIR_FORMAT  = "%y%m"       -> ex. 1506
 
+## Used EXIF elements
+
+1. Date/Time Original
+2. File Modification Date/Time
+
+2nd element is used when 1st element is not found.
+
+If 1 or 2 elements are not found, the file is not moved. 
+
 ## Original Script
 
 - <https://github.com/mo-ya/photo-relocate>
