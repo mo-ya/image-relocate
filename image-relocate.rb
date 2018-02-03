@@ -53,7 +53,7 @@ class Dir
           if !(exif_date_time_original)
             o.split("\n").each{|info_line|
               if info_line =~ /^File Modification Date\/Time/
-                warn "[WARN] #{file}: \"Date/Time Original\" data in EXIF data not found. Use \"File Modification Date/Time\""
+                warn "[WARN] #{file}: \"Date/Time Original\" in EXIF data is not found. Instead, \"File Modification Date/Time\" is used."
 
                 label, time_str = info_line.split(":", 2)
 
